@@ -1,3 +1,4 @@
+
 # VKU.NewEnergy
 # AI-powered Vietnamese Laws Searching System
 This project is aimed to build a searching system for Vietnamese Laws that utilized AI powers.
@@ -158,3 +159,5 @@ Afterwards, FastAPI automatically generates documentation based on the specifica
 | user_email  | Email of submitter    | false        |
 | response  | Content of feedback    | false        |
 | rate  | Satisfaction of submitter (0 - 5)    | true        |
+## V. Database Design
+![image](https://github.com/VKU-NewEnergy/.github/assets/69782094/a6bde3a3-5405-4440-9820-d6c89b3039f8)
