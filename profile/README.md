@@ -17,6 +17,9 @@ git clone https://github.com/VKU-NewEnergy/vietnamese-laws-ai-system-ai.git
 - [Docker Compose](https://docs.docker.com/compose/install/)
 - [GNU Make](https://www.gnu.org/software/make/)
 - [PostgreSQL CLI](https://www.postgresql.org/download/)
+- [NodeJS v20](https://nodejs.org)
+- [Yarn](https://classic.yarnpkg.com/lang/en/docs/install/#debian-stable)
+- [Python v3.10.10](https://www.python.org/downloads/release/python-31010/)
 ## III. Setting up
 ### Front-end
 > ⚠️ Always cd into project root before doing anything
@@ -47,9 +50,7 @@ docker run -p 3000:3000 vietnam-laws-fe
 ```sh
 make prepare-environments
 ```
-- Fill in (or change) information in `.env` file
-
-#### 2. Start app
+#### 2. Start services
 ```sh
 docker compose up -d --build
 ```
