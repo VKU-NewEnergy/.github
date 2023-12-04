@@ -164,3 +164,6 @@ Afterwards, FastAPI automatically generates documentation based on the specifica
 | rate  | Satisfaction of submitter (0 - 5)    | true        |
 ## V. Database Design
 ![image](https://github.com/VKU-NewEnergy/.github/assets/69782094/a6bde3a3-5405-4440-9820-d6c89b3039f8)
+--------------------------------------------------------------------------------------------------------
+📝 License
+This project is licensed under the terms of the [Apache V2.0](https://github.com/VKU-NewEnergy/.github/blob/main/profile/LICENSE) license.
