@@ -27,7 +27,7 @@ git clone https://github.com/VKU-NewEnergy/vietnamese-laws-ai-system-ai.git
 > ⚠️ Always cd into project root before doing anything
 > cd vietnamese-laws-ai-system-fe
 
-#### 0. Prerequisites
+#### 1. Prerequisites
 ```bash
 # clone the repo
 git clone https://github.com/VKU-NewEnergy/vietnamese-laws-ai-system-fe
@@ -39,42 +39,42 @@ cd vietnamese-laws-ai-system-fe
 cp .env.example .env
 ```
 
-#### 1. Launch app by `make` command
+#### 2. Launch app by `make` command
 ```bash
 make install
 ```
 
-#### 2. Development
-Install dependencies
+#### 3. Development
+#### 3.1 Install dependencies
 ```
 yarn install
 ```
-Run the development server
+#### 3.2 Run the development server
 ```
 yarn dev
 ```
-#### 3. Production
-Build container
+#### 4. Production
+#### 4.1 Build container
 ```
 docker build -t vietnam-laws-fe .
 ```
-Run container
+#### 4.2 Run container
 ```
 docker run -p 3000:3000 vietnam-laws-fe
 ```
 ### Backend services
 > ⚠️ Always cd into project root before doing anything
 > cd vietnamese-laws-ai-system-searching-service
-### 1. Launch app by `make` command
+#### 1. Launch app by `make` command
 ```
 make install
 ```
-### 2. Launch app manually
-#### 1. Prepare environment
+#### 2. Launch app manually
+#### 2.1. Prepare environment
 ```sh
 make prepare-environments
 ```
-#### 2. Start services
+#### 2.2. Start services
 ```sh
 docker compose up -d --build
 ```
@@ -102,29 +102,29 @@ make all
 pip install -r requirements.txt
 python main.py
 ```
-### 2.3 Using docker
+#### 2.3 Using docker
 ```
 docker compose up
 ```
 Afterwards, FastAPI automatically generates documentation based on the specification of the endpoints you have written. You can find the docs at http://localhost:9000/docs.
 ## IV. API List
-### 1. Topics API
+#### 1. Topics API
 - Get all topics: [GET]: `/api/v1/topics`
-### 2. Subjects API
+#### 2. Subjects API
 - Get all subjects: [GET]: `/api/v1/subjects`
 
 | Params      | Description   | Default     |
 | ----------- | -----------   | ----------- |
 | topic_id    | Topic ID      | null        |
 
-### 3. Indexing API
+#### 3. Indexing API
 - Get all indexing: [GET]: `/api/v1/indexing`
 
 | Params      | Description   | Default     |
 | ----------- | -----------   | ----------- |
 | subject_id  | Subject ID    | null        |
 
-### 4. Charters API
+#### 4. Charters API
 - Get all indexing: [GET]: `/api/v1/charters`
 
 | Params      | Description                         | Default     |
@@ -133,14 +133,14 @@ Afterwards, FastAPI automatically generates documentation based on the specifica
 | size        | Size of each page                   | 50          |
 | q           | Search text by title or description | ''          |
 
-### 5. Legal Documents API
+#### 5. Legal Documents API
 - Get all indexing: [GET]: `/api/v1/legal-documents`
 
 | Params      | Description   | Default     |
 | ----------- | -----------   | ----------- |
 | subject_id  | Subject ID    | null        |
 
-### 6. Feedback API
+#### 6. Feedback API
 - Submit a feedback for searching charter: [POST] `/api/v1/feedback`
 
 | Body      | Description   | Required     |
