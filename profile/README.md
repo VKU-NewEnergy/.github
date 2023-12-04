@@ -24,6 +24,24 @@ git clone https://github.com/VKU-NewEnergy/vietnamese-laws-ai-system-ai.git
 ### Front-end
 > ⚠️ Always cd into project root before doing anything
 > cd vietnamese-laws-ai-system-fe
+
+#### 0. Prerequisites
+
+- Node.js 20 or higher
+- Yarn 1.22 or higher
+- Docker (optional)
+
+```bash
+# clone the repo
+git clone https://github.com/VKU-NewEnergy/vietnamese-laws-ai-system-fe
+
+# cd to the repo
+cd vietnamese-laws-ai-system-fe
+
+# make a copy of .env.example as .env and change the values accordingly
+cp .env.example .env
+```
+
 #### 1. Development
 Install dependencies
 ```
