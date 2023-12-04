@@ -4,6 +4,9 @@
 This project is aimed to build a searching system for Vietnamese Laws that utilized AI powers.
 It includes three repositories. They are code for [User Interface](https://github.com/VKU-NewEnergy/vietnamese-laws-ai-system-fe), [Backend Services](https://github.com/VKU-NewEnergy/vietnamese-laws-ai-system-searching-service), and [AI System](https://github.com/VKU-NewEnergy/vietnamese-laws-ai-system-ai).
 > **Note** : You can find information about third-party licenses which used in this project in [this file](https://github.com/VKU-NewEnergy/.github/blob/main/profile/THIRD_PARTY_LICENSE_README.txt).
+📦 Dataset
+- [Codification](https://phapdien.moj.gov.vn/Pages/home.aspx)
+- [Vietnamese legal documents](https://vbpl.vn/pages/portal.aspx)
 ## I. Getting Started
 ### Clone repos
 ```
