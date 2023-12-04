@@ -17,20 +17,17 @@ git clone https://github.com/VKU-NewEnergy/vietnamese-laws-ai-system-ai.git
 - [Docker Compose](https://docs.docker.com/compose/install/)
 - [GNU Make](https://www.gnu.org/software/make/)
 - [PostgreSQL CLI](https://www.postgresql.org/download/)
-- [NodeJS v20](https://nodejs.org)
-- [Yarn](https://classic.yarnpkg.com/lang/en/docs/install/#debian-stable)
+- [NodeJS 20 or higher](https://nodejs.org)
+- [Yarn 1.22 or higher](https://classic.yarnpkg.com/lang/en/docs/install/#debian-stable)
 - [Python v3.10.10](https://www.python.org/downloads/release/python-31010/)
+- [gdown](https://github.com/wkentaro/gdown)
+- [Unzip CLI](https://www.tecmint.com/install-zip-and-unzip-in-linux/)
 ## III. Setting up
 ### Front-end
 > ⚠️ Always cd into project root before doing anything
 > cd vietnamese-laws-ai-system-fe
 
 #### 0. Prerequisites
-
-- Node.js 20 or higher
-- Yarn 1.22 or higher
-- Docker (optional)
-
 ```bash
 # clone the repo
 git clone https://github.com/VKU-NewEnergy/vietnamese-laws-ai-system-fe
@@ -42,7 +39,12 @@ cd vietnamese-laws-ai-system-fe
 cp .env.example .env
 ```
 
-#### 1. Development
+#### 1. Launch app by `make` command
+```bash
+make install
+```
+
+#### 2. Development
 Install dependencies
 ```
 yarn install
@@ -51,7 +53,7 @@ Run the development server
 ```
 yarn dev
 ```
-#### 2. Production
+#### 3. Production
 Build container
 ```
 docker build -t vietnam-laws-fe .
@@ -63,8 +65,12 @@ docker run -p 3000:3000 vietnam-laws-fe
 ### Backend services
 > ⚠️ Always cd into project root before doing anything
 > cd vietnamese-laws-ai-system-searching-service
+### 1. Launch app by `make` command
+```
+make install
+```
+### 2. Launch app manually
 #### 1. Prepare environment
-- Copy environment file
 ```sh
 make prepare-environments
 ```
@@ -72,9 +78,8 @@ make prepare-environments
 ```sh
 docker compose up -d --build
 ```
-
 #### 3. Prepare data for database
-- Download database import file from this [link](https://drive.google.com/file/d/1AT11PWQ_1Jsds-RiMM55fqgT_ynnKsbw/view)
+- Download database import file from this [link](https://drive.google.com/file/d/1eyYEydC-6TQ3uD2WO4cXpR0Odg3f3Pod/view)
 - Create `init-data` directory in root directory.
 - Extract and copy all files to `init-data` directory.
 #### 4. Import data into database
@@ -88,12 +93,16 @@ make import-data
 - Create `.env` file in the root directory.
 - Copy content from `.env.example` and change to your correct data.
 #### 2. Start app
-#### 2.1 Run locally
+#### 2.1 Using `make` command
+```bash
+make all
+```
+#### 2.2 Run locally
 ```
 pip install -r requirements.txt
 python main.py
 ```
-### 2.2 Using docker
+### 2.3 Using docker
 ```
 docker compose up
 ```
