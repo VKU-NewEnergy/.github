@@ -25,7 +25,9 @@ git clone https://github.com/VKU-NewEnergy/vietnamese-laws-ai-system-ai.git
 ## III. Setting up
 ### Front-end
 > ⚠️ Always cd into project root before doing anything
-> cd vietnamese-laws-ai-system-fe
+```
+cd vietnamese-laws-ai-system-fe
+```
 
 #### 1. Prerequisites
 ```bash
@@ -64,7 +66,10 @@ docker run -p 3000:3000 vietnam-laws-fe
 ```
 ### Backend services
 > ⚠️ Always cd into project root before doing anything
-> cd vietnamese-laws-ai-system-searching-service
+```
+cd vietnamese-laws-ai-system-searching-service
+```
+
 #### 1. Launch app by `make` command
 ```
 make install
@@ -88,7 +93,10 @@ make import-data
 ```
 ### AI System
 > ⚠️ Always cd into project root before doing anything
-> cd vietnamese-laws-ai-system-ai
+```
+cd vietnamese-laws-ai-system-ai
+```
+
 #### 1. Prepare environment
 - Create `.env` file in the root directory.
 - Copy content from `.env.example` and change to your correct data.
