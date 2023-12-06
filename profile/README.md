@@ -165,6 +165,11 @@ Afterwards, FastAPI automatically generates documentation based on the specifica
 | rate  | Satisfaction of submitter (0 - 5)    | true        |
 ## V. Database Design
 ![image](https://github.com/VKU-NewEnergy/.github/assets/69782094/a6bde3a3-5405-4440-9820-d6c89b3039f8)
+## VI. Application System Architecture
+![image](https://github.com/VKU-NewEnergy/.github/assets/69782094/1daa2464-f6ce-4b45-ae1f-d6995be0fe31)
+## VI. Retrieval QnA System Architecture
+![image](https://github.com/VKU-NewEnergy/.github/assets/69782094/9f531af8-ec5d-4a98-a714-fd35db55882a)
+![image](https://github.com/VKU-NewEnergy/.github/assets/69782094/bbcd9160-2423-4dd9-9dad-12862293d660)
 --------------------------------------------------------------------------------------------------------
 📝 License
 This project is licensed under the terms of the [Apache V2.0](https://github.com/VKU-NewEnergy/.github/blob/main/profile/LICENSE) license.
