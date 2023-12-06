@@ -1,5 +1,6 @@
 
 # VKU.NewEnergy
+[TEST HERE](http://www.vku-newenergy.tech/)
 # AI-powered Vietnamese Laws Searching System
 This project is aimed to build a searching system for Vietnamese Laws that utilized AI powers.
 It includes three repositories. They are code for [User Interface](https://github.com/VKU-NewEnergy/vietnamese-laws-ai-system-fe), [Backend Services](https://github.com/VKU-NewEnergy/vietnamese-laws-ai-system-searching-service), and [AI System](https://github.com/VKU-NewEnergy/vietnamese-laws-ai-system-ai).
