@@ -102,6 +102,9 @@ make import-data
 cd vietnamese-laws-ai-system-ai
 ```
 
+### Training data
+- [Google Drive](https://drive.google.com/file/d/1GXDA94yYdC-dSASfCED9Q06-BVbHYSAe/view?usp=sharing)
+
 #### 1. Prepare environment
 - Create `.env` file in the root directory.
 - Copy content from `.env.example` and change to your correct data.
